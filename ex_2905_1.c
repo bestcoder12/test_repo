@@ -7,6 +7,10 @@
 // This key comination will exit you from the program
 // The functionality is currently being improved by first printing the text in file if any
 // That may take another week or two due to other commitments
+// Another warning right now this program opens the file in write mode which will delete
+// the text written prior to the execution of the program
+// So for the time being please donot run it in your computer especially already created files
+// for the time being. Though that erroneous behaviour is being corrected.
 
 FILE *file_open(void)
 {
