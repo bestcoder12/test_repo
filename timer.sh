@@ -10,6 +10,12 @@ timer_dur_hour=0
 timer_dur_min=20
 timer_dur_sec=0
 
+# The audio_format varible has the list of playable formats that can be played
+# If you want to play any other format insert them after these default ones with same format
+# Just add them by adding pipe (the vertical line) and with same order of symbols
+# Simply add the words for that specific format
+audio_format="^*\.mp3$|^*\.wav$|^*\.m4a$"
+
 # Uncomment the following lines to have a timer with variable length
 
 #read -p "Hours: " timer_dur_hour
@@ -38,7 +44,7 @@ else
 fi
 
 
-timer_tune=$(ls | grep -E "^*mp3$|^*wav$|^*m4a$" | shuf -n 1)
+timer_tune=$(ls | grep -E "$audio_format" | shuf -n 1)
 
 sleep ${timer_dur_hour}h ${timer_dur_min}m ${timer_dur_sec}s && celluloid $timer_tune &
 
