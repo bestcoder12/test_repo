@@ -3,7 +3,10 @@
 # include <string.h>
 
 // Program for writing text in a file
-// Date:29-05-2020
+// This program can write text to a file until stopped by writing #q
+// This key comination will exit you from the program
+// The functionality is currently being improved by first printing the text in file if any
+// That may take another week or two due to other commitments
 
 FILE *file_open(void)
 {
