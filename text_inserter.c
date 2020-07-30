@@ -2,7 +2,14 @@
 # include <stdlib.h>
 # include <string.h>
 
+// Program to enter text in an existing or a new file
+// This program can also print the existing text in the file if and when given instruction
+// By typing the key combination #p and pressing enter
+// Also the program can be exited by typing key combination #q and then enter
 
+// Only regular files can be opened and not binary file
+
+// Function for opening the file in read and append mode
 FILE *file_open(void)
 {
 	char filename[80]; 
@@ -14,6 +21,7 @@ FILE *file_open(void)
 	return fp1;
 }
 
+// Function for counting the number of lines in the file
 long int line_count(FILE *fp2)
 {
 	rewind(fp2);
@@ -28,6 +36,7 @@ long int line_count(FILE *fp2)
 	return cnt1;
 }
 
+// Function for reading the text in the file
 void read_text(FILE *fp3)
 {
 	// Function for finding the number of lines in the file
@@ -54,6 +63,7 @@ void read_text(FILE *fp3)
 	printf("\n");
 }
 
+// Function to enter the text in the file
 void enter_text(FILE *fp4)
 {
 	int i;
