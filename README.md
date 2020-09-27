@@ -7,4 +7,6 @@
 
 `guessinggame.sh` is a bash script for a simple and dumb game for finding the number of files in a directory (folder).
 
-`makefile` can be used for compiling the `text_inserter.c` using the make command. The gcc compiler is a prerequisite for this command.
+`con_def.cpp` is a c++ program for ordering of footballs and storing orders in a singly link list.
+
+`makefile` can be used for compiling the `text_inserter.c` and `con_def.cpp` using the make command. The gcc compiler is a prerequisite for this command.
