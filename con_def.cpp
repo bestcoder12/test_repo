@@ -7,7 +7,17 @@ using namespace std;
 
 // Program to show the usage of constructor and destructors
 
-// Program to specify the specifications of a football
+/* 
+ * Program to specify the specifications of a football
+ * and order them as per requirement.
+ * This is done by storing the items in a singly link list
+ * each new thing is explained as they occur in the program.
+ */
+
+// Enumeration data type of name color which creates a mapping of symbols to 
+// integer values starting from top,
+// for example WHITE will have a value of 0, RED will have a value of 1
+// and so on.
 
 enum color
 {
@@ -19,6 +29,8 @@ enum color
 	BLACK,
 	GREEN
 };
+
+// Another enumeration data type of the name comp for companies.
 
 enum comp
 {
